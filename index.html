@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2Do</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">2Do</div>
+    <nav>
+      <ul>
+        <li><a href="#todo">To-do list</a></li>
+        <li><a href="#notas" id="link-notas">Notas</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a id="modo-escuro">Modo Escuro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="todo" class="section-todo">
+      <div class="caixa">
+        <input class="input-task" placeholder="Quais são os planos para hoje?" />
+        <button class="button-task">Adicionar</button>
+        <ul class="list-task"></ul>
+      </div>
+    </section>
+
+    <section id= "notas" class="bloco-notas">
+      <div class="editor">
+        <h2>Bloco de Notas</h2>
+        <textarea id="anotacao" placeholder="Digite sua anotação..."></textarea>
+        <button onclick="salvarNota()">Salvar</button>
+      </div>
+      <div class="lista-notas">
+        <h3>Notas Salvas</h3>
+        <ul id="notasSalvas">
+          <li>Não há nada aqui</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <footer id="contato" class="contato">
+    <h3>Contato</h3>
+    <a href="mailto:luisatoledo.ti@gmail.com">luisatoledo.ti@gmail.com</a>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
